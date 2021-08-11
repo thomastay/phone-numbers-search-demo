@@ -31,7 +31,7 @@ function App() {
     setEntries(() => {
       let q = query();
       if (q) {
-        q = q.toLowerCase().trim();
+        q = q.trim();
         const entries = phoneNumbers().filter((entry) => entry.includes(q));
         return entries;
       }
@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div class={styles.App}>
+      <h1>Phone number search microbenchmark</h1>
       <SearchBar setQuery={setQuery} />
       <Select
         choices={phoneNumbersRangeChoices}

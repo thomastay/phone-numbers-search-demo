@@ -1,5 +1,9 @@
+const NINES = 1e12 - 1;
+const TEN = 1e11;
+
 function genRandPhoneNumber() {
-  return Math.floor(100_000_000 + Math.random() * 9_999_999_999).toString();
+  const result = TEN + Math.floor(Math.random() * NINES);
+  return `+${result}`;
 }
 
 export function genPhoneNums(n) {

@@ -6,7 +6,7 @@ function Select(props) {
       <h2>Size of dictionary</h2>
       <div class={styles["select"]}>
         {props.choices.map((choice) => (
-          <>
+          <div class={styles["radio-group"]}>
             <input
               type="radio"
               name={props.name}
@@ -16,7 +16,7 @@ function Select(props) {
               onChange={(e) => props.onChange(Number(e.target.value))}
             />
             <label>{choice.toLocaleString()}</label>
-          </>
+          </div>
         ))}
       </div>
     </>

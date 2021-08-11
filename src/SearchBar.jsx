@@ -4,7 +4,7 @@ function SearchBar(props) {
   return (
     <>
       <label htmlFor="header-search">
-        <span class={styles["visually-hidden"]}></span>
+        <h3>Enter a phone number</h3>
       </label>
       <input
         onInput={(e) => {
@@ -12,7 +12,7 @@ function SearchBar(props) {
         }}
         type="tel"
         id="header-search"
-        placeholder="Enter a phone number"
+        placeholder="+5550703452"
         name="enterphonenumber"
       />
     </>
