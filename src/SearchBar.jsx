@@ -10,7 +10,7 @@ function SearchBar(props) {
         onInput={(e) => {
           props.setQuery(e.target.value);
         }}
-        type="text"
+        type="tel"
         id="header-search"
         placeholder="Enter a phone number"
         name="enterphonenumber"
